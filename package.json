@@ -1,0 +1,16 @@
+{
+  "name": "socialsphere",
+  "version": "1.0.0",
+  "description": "Backend Project",
+  "keywords": [
+    "Javascript",
+    "Backend"
+  ],
+  "license": "ISC",
+  "author": "Ridhi Tuteja",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
