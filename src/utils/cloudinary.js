@@ -13,10 +13,12 @@ import fs from "fs";
             const result = await cloudinary.uploader.upload(localFilePath, {
                 resource_type: "auto"
             })
-            console.log("Cloudinary result:", result.url);
+            fs.unlinkSync(localFilePath);
+            //console.log("Cloudinary result:", result);
             return result;
         } catch (error) {
-            fs.unlinkSync(localFilePath); // Delete the file if upload fails
+            console.log("Cloudinary error: " ,error);
+            fs.unlinkSync(localFilePath);
             return null;
         }
     }
